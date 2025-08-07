@@ -29,6 +29,9 @@ int main() {
     
     // Codigo Da Carta 
 
+    printf("Desafio Super Trunfo - Países \n");
+    printf("\n");
+
     // Primeira Carta
 
     printf("Insira os dados da primeira carta \n");

@@ -52,12 +52,12 @@ int main() {
 
     // Codigo da cidade
     printf("Digite o codigo da cidade:\n");
-    scanf("%s", &codigicidade);
+    scanf("%s", codigicidade);
     
 
     // Nome da cidade
     printf("Digite o nome da cidade \n");
-    scanf("%s", &nomeCidade);
+    scanf("%s", nomeCidade);
     //fgets(nomeCidade ,50,stdin);
     //nomeCidade[strcspn(nomeCidade, "\n")] = 0;
     
@@ -82,7 +82,9 @@ int main() {
     scanf("%d", &NumeroPontosTuristico);
 
     Dens = (float)(populacao) / areaemkm;
-    PibPercaoita = (float)(pib)/ populacao;
+    //PibPercaoita = (float)(pib)/ populacao;
+    PibPercaoita = (float)(pib * 1000000000.0f)/ populacao;
+
 
     printf("\n"); 
 
@@ -104,7 +106,7 @@ int main() {
     
     // Nome da cidade
     printf("Digite o nome da cidade \n");
-    scanf("%s", &nomeCidade02);
+    scanf("%s", nomeCidade02);
     //fgets(nomeCidade02,50,stdin);
     // Numero de habitantes
 
@@ -127,7 +129,8 @@ int main() {
     scanf("%d", &NumeroPontosTuristico02);
 
     Dens02 = (float)(populacao02) / areaemkm02;
-    PibPercaoita02 = (float)(pib02)/ populacao02;
+   // PibPercaoita02 = (float)(pib02)/ populacao02;
+    PibPercaoita02 = (float)(pib02 * 1000000000.0f) / populacao02;
 
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
